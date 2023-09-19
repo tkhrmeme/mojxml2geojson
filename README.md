@@ -35,6 +35,12 @@ pip install git+https://github.com/digital-go-jp/mojxml2geojson.git
 mojxml2geojson ./moj.xml
 ```
 
+Use -o/--output option to store geojson files into the specified directory. Also, the zipped xml file is automatically extracted into a temporary directory to convert to a geojson file. The temporary directory and files will be removed finally.
+
+```bash
+mojxml2geojson --output outDir ./moj.zip
+```
+
 ### Usage with Docker
 
 ```
